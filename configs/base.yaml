@@ -1,0 +1,51 @@
+project:
+  name: ChargeFlow
+  environment: dev
+  raw_data_root: data/raw
+
+defaults:
+  country: US
+  states:
+    - TX
+    - CA
+  station_limit: 200
+  request_timeout_seconds: 30
+
+sources:
+  nrel:
+    base_url: https://developer.nrel.gov/api/alt-fuel-stations/v1.json
+  weather:
+    base_url: https://api.open-meteo.com/v1/forecast
+    hourly_fields:
+      - temperature_2m
+      - apparent_temperature
+      - precipitation_probability
+      - cloud_cover
+      - wind_speed_10m
+  eia:
+    base_url: https://api.eia.gov/v2/electricity/rto/region-data/data/
+    frequency: hourly
+    facets:
+      type:
+        - D
+    data:
+      - value
+    sort:
+      - column: period
+        direction: desc
+
+regions:
+  weather:
+    - station_group: austin_tx
+      latitude: 30.2672
+      longitude: -97.7431
+    - station_group: dallas_tx
+      latitude: 32.7767
+      longitude: -96.7970
+    - station_group: los_angeles_ca
+      latitude: 34.0522
+      longitude: -118.2437
+  energy:
+    respondents:
+      - ERCO
+      - CISO
