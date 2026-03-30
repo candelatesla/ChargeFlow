@@ -92,6 +92,29 @@ If you added real API keys in `.env`, the ingestion commands will automatically 
 
 Raw outputs are written into timestamped files under `data/raw/`.
 
+## Run Day 2 Synthetic Generation
+
+Generate synthetic operational and user-behavior datasets anchored to the latest station ingestion:
+
+```bash
+python3 -m src.synthetic.cli generate-all
+```
+
+Synthetic outputs are written to `data/processed/synthetic/`:
+
+- `augmented_stations.csv`
+- `users.csv`
+- `vehicles.csv`
+- `charging_sessions.csv`
+- `telemetry_events.csv`
+- `queue_events.csv`
+- `failure_events.csv`
+- `maintenance_tickets.csv`
+- `maintenance_notes.csv`
+- `generation_manifest.csv`
+
+See `docs/day2_synthetic_generation.md` for dataset design and join keys.
+
 ## AI-Assisted Development Note
 
 This project was AI-assisted. I defined the problem, architecture, constraints, and review standards, and used AI tools to accelerate implementation while remaining responsible for validation, debugging, and final quality.

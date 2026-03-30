@@ -20,6 +20,7 @@ dev = [
 
 [project.scripts]
 chargeflow-ingest = "src.ingestion.cli:main"
+chargeflow-synthetic = "src.synthetic.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}

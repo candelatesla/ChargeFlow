@@ -49,3 +49,15 @@ regions:
     respondents:
       - ERCO
       - CISO
+
+synthetic:
+  seed: 42
+  lookback_days: 45
+  users_per_station: 6
+  sessions_per_station_min: 24
+  sessions_per_station_max: 48
+  telemetry_events_per_session_min: 2
+  telemetry_events_per_session_max: 5
+  queue_event_probability: 0.42
+  failure_event_probability: 0.14
+  preventive_ticket_probability: 0.08
