@@ -115,6 +115,25 @@ Synthetic outputs are written to `data/processed/synthetic/`:
 
 See `docs/day2_synthetic_generation.md` for dataset design and join keys.
 
+## Run Day 3 Warehouse Build
+
+Build the local SQL warehouse, cleaned tables, quality checks, and gold marts:
+
+```bash
+python3 -m src.warehouse.cli build-all
+```
+
+Day 3 outputs are written to `data/processed/warehouse/`:
+
+- `chargeflow.db`
+- `dq_results.csv`
+- `gold_station_daily_metrics.csv`
+- `gold_state_daily_demand.csv`
+- `gold_station_health.csv`
+- `gold_ml_station_day_features.csv`
+
+See `docs/day3_warehouse.md` for the warehouse-layer overview.
+
 ## AI-Assisted Development Note
 
 This project was AI-assisted. I defined the problem, architecture, constraints, and review standards, and used AI tools to accelerate implementation while remaining responsible for validation, debugging, and final quality.

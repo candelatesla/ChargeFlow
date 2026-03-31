@@ -23,6 +23,12 @@ def processed_data_root() -> Path:
     return path
 
 
+def warehouse_data_root() -> Path:
+    path = processed_data_root() / "warehouse"
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
 def timestamp_slug() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
