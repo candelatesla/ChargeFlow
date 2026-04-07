@@ -16,6 +16,7 @@ class Settings:
         env_file_values = _read_env_file(ROOT_DIR / ".env")
         self.nrel_api_key = os.getenv("NREL_API_KEY", env_file_values.get("NREL_API_KEY", "DEMO_KEY"))
         self.eia_api_key = os.getenv("EIA_API_KEY", env_file_values.get("EIA_API_KEY", "DEMO_KEY"))
+        self.groq_api_key = os.getenv("GROQ_API_KEY", env_file_values.get("GROQ_API_KEY", ""))
         self.chargeflow_env = os.getenv("CHARGEFLOW_ENV", env_file_values.get("CHARGEFLOW_ENV", "dev"))
         self.chargeflow_log_level = os.getenv(
             "CHARGEFLOW_LOG_LEVEL",

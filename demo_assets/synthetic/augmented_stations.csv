@@ -1,0 +1,201 @@
+station_id,source_station_id,station_name,network,city,state,latitude,longitude,access_code,connector_types,port_count,site_power_kw,traffic_score,traffic_segment,station_age_years,parking_capacity_estimate
+CF-ST-1517,1517,LADWP - Truesdale Center,SHELL_RECHARGE,Sun Valley,CA,34.248319,-118.387971,private,CHADEMO|J1772|J1772COMBO,59,413,75,high,1,65
+CF-ST-1523,1523,Los Angeles Convention Center,Non-Networked,Los Angeles,CA,34.040539,-118.271387,public,J1772,8,88,50,medium,3,11
+CF-ST-1525,1525,LADWP - John Ferraro Building,Non-Networked,Los Angeles,CA,34.059133,-118.248589,private,CHADEMO|J1772|J1772COMBO,394,59100,78,high,2,405
+CF-ST-1531,1531,LADWP - Haynes Power Plant,Non-Networked,Long Beach,CA,33.759802,-118.096665,private,J1772,31,217,62,medium,1,34
+CF-ST-1552,1552,LADWP - Harbor Generating Station,Non-Networked,Wilmington,CA,33.770508,-118.265628,private,J1772,12,132,48,low,9,23
+CF-ST-1556,1556,LADWP - Sylmar West,Non-Networked,Sylmar,CA,34.30309,-118.480505,private,J1772,9,1350,36,low,4,21
+CF-ST-1572,1572,LADWP - EV Service Center,Non-Networked,Los Angeles,CA,34.066801,-118.227605,private,CHADEMO|J1772,44,6600,79,high,7,49
+CF-ST-1573,1573,LADWP - Fairfax Center,Non-Networked,Los Angeles,CA,34.036777,-118.368841,private,J1772,14,2100,63,medium,5,16
+CF-ST-1589,1589,LADWP - Palmetto Center,Non-Networked,Los Angeles,CA,34.039736,-118.236065,private,CHADEMO|J1772|J1772COMBO,36,396,83,high,7,43
+CF-ST-6355,6355,Scripps Green Hospital,Non-Networked,La Jolla,CA,32.89947,-117.243,public,J1772,1,11,52,medium,4,8
+CF-ST-6405,6405,Galpin Motors,Non-Networked,Sepulveda,CA,34.221665,-118.468371,public,J1772,2,14,41,low,7,5
+CF-ST-6425,6425,Galleria at Tyler,Non-Networked,Riverside,CA,33.909914,-117.459053,public,J1772,4,76,57,medium,5,6
+CF-ST-6505,6505,City of Pasadena - Holly Street Garage,Non-Networked,Pasadena,CA,34.14762,-118.147111,public,J1772,26,1300,81,high,9,29
+CF-ST-6506,6506,City of Pasadena - De Lacey Garage,Non-Networked,Pasadena,CA,34.145138,-118.152655,public,J1772,3,150,94,high,2,13
+CF-ST-6507,6507,City of Pasadena - Schoolhouse Garage,Non-Networked,Pasadena,CA,34.145119,-118.150133,public,J1772,3,450,53,medium,6,14
+CF-ST-7172,7172,Hyatt Regency Long Beach,Non-Networked,Long Beach,CA,33.7637,-118.192,public,J1772,1,7,47,low,1,13
+CF-ST-7184,7184,Los Angeles International Airport (LAX) - Lot 6,Non-Networked,Los Angeles,CA,33.94325,-118.403342,public,J1772,20,380,49,low,2,25
+CF-ST-7195,7195,Courtyard Marriott - Oxnard Ventura,Non-Networked,Oxnard,CA,34.228315,-119.170865,public,J1772,1,7,90,high,7,7
+CF-ST-7196,7196,Hilton - Palm Springs,Non-Networked,Palm Springs,CA,33.824004,-116.543589,public,J1772,2,38,64,medium,3,9
+CF-ST-7206,7206,Inland Empire Foods,Non-Networked,Riverside,CA,34.0189,-117.38,public,J1772|TESLA,4,44,57,medium,5,16
+CF-ST-7212,7212,Sacramento International Airport - Daily A Lot,Non-Networked,Sacramento,CA,38.69005,-121.58889,public,J1772,4,28,76,high,3,14
+CF-ST-7229,7229,City of Santa Monica - Airport,Non-Networked,Santa Monica,CA,34.017081,-118.44704,public,J1772,2,22,81,high,3,11
+CF-ST-7230,7230,City of Santa Monica - Pier,Non-Networked,Santa Monica,CA,34.010021,-118.49583,public,J1772,3,57,59,medium,9,8
+CF-ST-7242,7242,Universal City Hilton,Non-Networked,Universal City,CA,34.13722,-118.35835,public,J1772|NEMA520,11,209,78,high,1,16
+CF-ST-7250,7250,Office Max - Home Depot,Non-Networked,Downey,CA,33.94756,-118.153806,public,J1772,4,28,87,high,6,12
+CF-ST-7280,7280,Hyatt at Fisherman's Wharf,Non-Networked,San Francisco,CA,37.80619,-122.4152,public,J1772,1,7,52,medium,4,12
+CF-ST-7286,7286,Arden Fair Mall,Non-Networked,Sacramento,CA,38.599693,-121.427045,public,J1772,4,76,91,high,4,16
+CF-ST-21358,21358,Palace Hotel,Non-Networked,San Francisco,CA,37.78881,-122.401,public,J1772,2,100,66,medium,8,6
+CF-ST-21360,21360,Mark Hopkins InterContinental Hotel,Non-Networked,San Francisco,CA,37.791791,-122.411265,public,J1772,1,11,51,medium,4,11
+CF-ST-21395,21395,California State University - Northridge,Non-Networked,Northridge,CA,34.248959,-118.523887,public,J1772,2,38,69,medium,7,13
+CF-ST-21396,21396,California State University - Northridge,Non-Networked,Northridge,CA,34.241687,-118.528543,public,J1772,2,38,60,medium,4,6
+CF-ST-21397,21397,California State University - Northridge,Non-Networked,Northridge,CA,34.236853,-118.532588,public,J1772,4,200,67,medium,2,6
+CF-ST-21402,21402,Los Angeles Harbor Department Headquarters,Non-Networked,San Pedro,CA,33.740758,-118.28192,public,J1772,4,28,90,high,3,16
+CF-ST-21419,21419,Getty Center,Non-Networked,Los Angeles,CA,34.077588,-118.474585,public,J1772|NEMA520,27,1350,45,low,2,35
+CF-ST-21450,21450,LA County DPR Arboretum,POWERFLEX,Arcadia,CA,34.145528,-118.050548,public,J1772,3,450,59,medium,8,13
+CF-ST-21525,21525,Helms Bakery Building,Non-Networked,Los Angeles,CA,34.029971,-118.385231,public,J1772,6,900,51,medium,1,18
+CF-ST-21535,21535,Westfield MainPlace Mall,Non-Networked,Santa Ana,CA,33.777054,-117.870566,public,J1772,8,56,81,high,9,14
+CF-ST-21559,21559,California State University - Channel Islands,Non-Networked,Camarillo,CA,34.166576,-119.045855,public,J1772,5,95,84,high,2,11
+CF-ST-21561,21561,Brea Downtown Parking,Non-Networked,Brea,CA,33.919899,-117.898618,public,J1772,4,44,62,medium,8,6
+CF-ST-21565,21565,Home Depot,Non-Networked,Newbury Park,CA,34.192178,-118.934793,public,J1772|NEMA515,6,114,81,high,9,10
+CF-ST-21566,21566,Lake Casitas Municipal Water District - Recreational Area,Non-Networked,Oak View,CA,34.418322,-119.3368,public,J1772,1,7,67,medium,5,13
+CF-ST-21569,21569,San Dimas Park & Ride,Non-Networked,San Dimas,CA,34.105275,-117.809208,public,J1772,2,300,67,medium,4,6
+CF-ST-21606,21606,Ventura County Government Center,Non-Networked,Ventura,CA,34.267352,-119.2124,public,J1772,3,33,58,medium,9,13
+CF-ST-21607,21607,Ventura County Air Pollution Control District,Non-Networked,Ventura,CA,34.268756,-119.2154,public,J1772,3,21,93,high,6,12
+CF-ST-21609,21609,LADWP - Scattergood Generating Facility,Non-Networked,Playa del Rey,CA,33.917593,-118.425334,private,CHADEMO|J1772|J1772COMBO,20,140,36,low,6,26
+CF-ST-21612,21612,LA County DPW Baldwin Park,Non-Networked,Baldwin Park,CA,34.089085,-117.95463,private,J1772,3,21,50,medium,4,14
+CF-ST-21618,21618,LA County DPW Imperial,POWERFLEX,South Gate,CA,33.930663,-118.175758,private,J1772,1,7,95,high,2,10
+CF-ST-21673,21673,University of California - Davis Extension - Lot 80,Non-Networked,Davis,CA,38.539336,-121.732405,public,J1772|NEMA520,4,28,87,high,9,8
+CF-ST-21713,21713,San Luis Obispo County Air Pollution Control District,Non-Networked,San Luis Obispo,CA,35.25939,-120.64492,private,J1772|NEMA520,2,100,43,low,9,6
+CF-ST-25171,25171,LADWP - Wilmington District Yard,Non-Networked,Wilmington,CA,33.773005,-118.265821,private,J1772,18,2700,51,medium,7,23
+CF-ST-25491,25491,Fair Oaks - Orangevale - Community Library,Non-Networked,Fair Oaks,CA,38.66292,-121.2634,public,J1772,2,300,94,high,4,8
+CF-ST-25494,25494,Sutter Galleria Mall - University of California - Davis Extension,Non-Networked,Sacramento,CA,38.57277,-121.467902,public,J1772|NEMA520,3,57,60,medium,8,13
+CF-ST-25497,25497,North Highlands Library,Non-Networked,Antelope,CA,38.7042,-121.365,public,J1772,1,7,63,medium,4,6
+CF-ST-25500,25500,Gateway Oaks Metro Center,Non-Networked,Sacramento,CA,38.615468,-121.517263,private,J1772,1,19,39,low,1,12
+CF-ST-25501,25501,University of California - Davis - Medical Center,Non-Networked,Sacramento,CA,38.552483,-121.4487,public,J1772,2,22,70,medium,4,4
+CF-ST-25507,25507,Mosquito Road Park and Ride,Non-Networked,Placerville,CA,38.73323,-120.78962,public,J1772,2,14,39,low,4,5
+CF-ST-25511,25511,City of Vacaville - Cultural Center,Non-Networked,Vacaville,CA,38.356027,-121.9628,public,J1772,1,7,92,high,6,4
+CF-ST-25514,25514,Stars Recreation Center,Non-Networked,Vacaville,CA,38.36557,-121.967,public,J1772,4,44,67,medium,5,16
+CF-ST-25515,25515,City of Vacaville - Regional Transport Center,Non-Networked,Vacaville,CA,38.35172,-121.987,public,J1772,2,22,66,medium,9,6
+CF-ST-25516,25516,Office of Housing & Redevelopment,Non-Networked,Vacaville,CA,38.356907,-122.001886,public,J1772,2,300,81,high,8,7
+CF-ST-25517,25517,KUIC Radio - Parking Lot,Non-Networked,Vacaville,CA,38.355867,-121.9862,public,J1772,2,100,85,high,7,7
+CF-ST-25518,25518,City of Vacaville - City Hall,Non-Networked,Vacaville,CA,38.351758,-121.994475,public,J1772,9,63,41,low,7,16
+CF-ST-25519,25519,Citrus Heights City Hall,Non-Networked,Citrus Heights,CA,38.682605,-121.297614,public,J1772,5,250,62,medium,8,7
+CF-ST-25520,25520,Pitt School Plaza,Non-Networked,Dixon,CA,38.457369,-121.842567,public,NEMA520,3,21,78,high,1,11
+CF-ST-25522,25522,El Dorado County Government Center,Non-Networked,Placerville,CA,38.72799,-120.828,public,J1772,3,57,81,high,2,8
+CF-ST-25523,25523,El Dorado Transit Park & Ride,Non-Networked,El Dorado Hills,CA,38.6476,-121.067,public,J1772,2,22,47,low,9,11
+CF-ST-25525,25525,Elk Grove Kia,Non-Networked,Elk Grove,CA,38.40553,-121.391,private,J1772,1,50,43,low,3,7
+CF-ST-25527,25527,CVS Pharmacy,Non-Networked,Granite Bay,CA,38.74453,-121.17,public,J1772,1,11,64,medium,2,10
+CF-ST-25610,25610,Carmichael Library,Non-Networked,Carmichael,CA,38.618066,-121.334337,public,J1772,1,150,86,high,2,3
+CF-ST-27302,27302,Rio Vista City Hall,Non-Networked,Rio Vista,CA,38.15485,-121.69,public,J1772,1,150,76,high,1,4
+CF-ST-27328,27328,Fairfield City Hall,Non-Networked,Fairfield,CA,38.25281,-122.044229,public,J1772,2,22,94,high,3,10
+CF-ST-27329,27329,Solano Community College,Non-Networked,Fairfield,CA,38.23723,-122.123,public,J1772,4,200,66,medium,4,12
+CF-ST-27335,27335,Vallejo Ferry Terminal,Non-Networked,Vallejo,CA,38.105062,-122.265895,public,J1772,4,28,92,high,3,12
+CF-ST-28007,28007,Los Angeles International Airport (LAX) - Lot 1,Non-Networked,Los Angeles,CA,33.944761,-118.399767,public,J1772,20,1000,35,low,5,29
+CF-ST-29862,29862,City of Vacaville - Police Headquarters,Non-Networked,Vacaville,CA,38.35109,-121.993654,private,J1772,2,100,53,medium,9,14
+CF-ST-33177,33177,LADWP - Boylston,Non-Networked,Los Angeles,CA,34.059047,-118.256812,private,J1772,19,950,80,high,3,24
+CF-ST-33178,33178,LADWP - Central District,Non-Networked,Los Angeles,CA,34.033898,-118.256673,private,CHADEMO|J1772|J1772COMBO,56,616,53,medium,1,67
+CF-ST-33179,33179,LADWP - Lincoln Heights District,Non-Networked,Los Angeles,CA,34.081998,-118.21713,private,J1772,73,10950,82,high,1,80
+CF-ST-33180,33180,LADWP - Receiving Station C,Non-Networked,Wilmington,CA,33.799476,-118.257977,private,J1772,4,28,38,low,8,14
+CF-ST-33182,33182,LADWP - Valley Center Admin Lot,Non-Networked,Van Nuys,CA,34.208708,-118.444358,private,CHADEMO|J1772|J1772COMBO,90,13500,93,high,3,92
+CF-ST-33183,33183,LADWP - Valley Generating Station,Non-Networked,Sun Valley,CA,34.241928,-118.390147,private,CHADEMO|J1772|J1772COMBO,42,294,67,medium,3,45
+CF-ST-33545,33545,Nut Tree Village,Non-Networked,Vacaville,CA,38.368755,-121.961192,public,J1772|NEMA515,3,21,73,medium,4,11
+CF-ST-33555,33555,4th and G Plaza Public Parking Garage,Non-Networked,Davis,CA,38.54643,-121.7388,public,J1772,2,300,42,low,4,13
+CF-ST-33556,33556,Davis Amtrak Station,Non-Networked,Davis,CA,38.5443,-121.738,public,J1772,2,14,73,medium,2,10
+CF-ST-33557,33557,University of California - Davis - Quad Parking Structure,Non-Networked,Davis,CA,38.544538,-121.749713,public,J1772|NEMA520,10,1500,77,high,9,17
+CF-ST-33558,33558,University Covenant Church,Non-Networked,Davis,CA,38.55755,-121.6947,public,J1772,1,19,94,high,4,13
+CF-ST-33559,33559,Wildhorse Golf Club,Non-Networked,Davis,CA,38.569412,-121.721373,public,J1772,2,38,80,high,4,8
+CF-ST-33564,33564,Lakewood Center Mall,Non-Networked,Lakewood,CA,33.84788,-118.13889,public,J1772,2,22,60,medium,5,11
+CF-ST-33690,33690,Golden Gate Ferry Terminal,Non-Networked,Larkspur,CA,37.94495,-122.5096,public,J1772,2,14,55,medium,1,11
+CF-ST-33695,33695,Oakland International Airport - Daily Lot,Non-Networked,Oakland,CA,37.7136,-122.2087,public,J1772,2,300,74,medium,2,5
+CF-ST-35146,35146,Fairfield Transportation Center,Non-Networked,Fairfield,CA,38.2482,-122.0678,public,J1772,4,44,69,medium,9,10
+CF-ST-35560,35560,Home Depot,Non-Networked,San Luis Obispo,CA,35.249929,-120.689683,public,J1772,5,95,43,low,2,10
+CF-ST-35561,35561,San Luis Obispo Promenade - Bed Bath & Beyond,Non-Networked,San Luis Obispo,CA,35.25982,-120.676,public,J1772,4,76,58,medium,3,13
+CF-ST-36378,36378,BROOKFIELD PROP 300 CLAY STAT1,ChargePoint Network,Houston,TX,29.756604,-95.372854,public,J1772,2,300,88,high,5,13
+CF-ST-38379,38379,Toyota of Santa Monica,Non-Networked,Santa Monica,CA,34.019875,-118.49151,public,J1772,3,450,86,high,1,15
+CF-ST-38521,38521,City of Santa Monica - Civic Parking Garage,Non-Networked,Santa Monica,CA,34.010528,-118.4898,public,CHADEMO|J1772,14,2100,87,high,5,26
+CF-ST-39314,39314,Super 8 - Ukiah,Non-Networked,Ukiah,CA,39.1458,-123.198497,public,J1772,1,11,41,low,5,4
+CF-ST-39714,39714,Grubbs Nissan,Non-Networked,Bedford,TX,32.839448,-97.160732,public,CHADEMO|J1772|J1772COMBO,3,21,91,high,9,7
+CF-ST-39720,39720,Casa Nissan,Non-Networked,El Paso,TX,31.784468,-106.41682,public,J1772,2,38,52,medium,4,9
+CF-ST-39721,39721,Viva Nissan,Non-Networked,El Paso,TX,31.724024,-106.302211,public,J1772,1,19,48,low,9,10
+CF-ST-39723,39723,Nissan - Fort Worth,Non-Networked,Fort Worth,TX,32.721017,-97.478446,public,CHADEMO|J1772|J1772COMBO,2,14,51,medium,2,14
+CF-ST-39726,39726,Baker Nissan North,Non-Networked,Houston,TX,29.913542,-95.612404,public,CHADEMO|J1772|J1772COMBO,4,76,62,medium,1,6
+CF-ST-39727,39727,Central Houston Nissan,Non-Networked,Houston,TX,29.67646,-95.42258,public,CHADEMO|J1772|J1772COMBO,5,55,56,medium,5,9
+CF-ST-39728,39728,McDavid Nissan,Non-Networked,Houston,TX,29.625565,-95.22531,public,CHADEMO|J1772,2,100,82,high,9,10
+CF-ST-39729,39729,Mossy Nissan,Non-Networked,Houston,TX,29.78628,-95.6005,public,CHADEMO|J1772,2,14,70,medium,2,5
+CF-ST-39733,39733,Katy Nissan,Non-Networked,Katy,TX,29.775401,-95.817065,public,J1772,1,11,95,high,9,3
+CF-ST-39740,39740,McGavock Nissan,Non-Networked,Lubbock,TX,33.534592,-101.958504,public,J1772,1,19,88,high,9,5
+CF-ST-39742,39742,Trophy Nissan,Non-Networked,Mesquite,TX,32.829506,-96.629552,public,CHADEMO|J1772|J1772COMBO,3,33,62,medium,1,9
+CF-ST-39745,39745,Twin City Nissan,Non-Networked,Port Arthur,TX,29.953433,-94.007097,public,J1772,1,7,58,medium,6,6
+CF-ST-39750,39750,Ancira Nissan,Non-Networked,San Antonio,TX,29.543147,-98.57544,public,J1772,1,11,78,high,2,8
+CF-ST-39751,39751,Gunn Nissan,Non-Networked,San Antonio,TX,29.517253,-98.467365,public,J1772,1,150,84,high,7,12
+CF-ST-39752,39752,Ingram Park Nissan,Non-Networked,San Antonio,TX,29.457047,-98.625324,public,J1772,1,11,82,high,4,5
+CF-ST-39754,39754,Nissan - San Marcos,Non-Networked,San Marcos,TX,29.841733,-97.971466,public,J1772,1,11,86,high,7,3
+CF-ST-39756,39756,Sterling McCall Nissan,Non-Networked,Stafford,TX,29.64607,-95.57668,public,CHADEMO|J1772|J1772COMBO,2,38,46,low,7,14
+CF-ST-39761,39761,Southwest Nissan,Non-Networked,Weatherford,TX,32.7561,-97.705239,public,J1772,1,11,90,high,5,5
+CF-ST-39762,39762,Nissan - Wichita Falls,Non-Networked,Wichita Falls,TX,33.880443,-98.545754,public,J1772,3,21,85,high,7,5
+CF-ST-39870,39870,Antioch Nissan,Non-Networked,Antioch,CA,38.007496,-121.83165,public,CHADEMO|J1772|J1772COMBO,2,100,89,high,4,7
+CF-ST-39871,39871,Nissan of Bakersfield,Non-Networked,Bakersfield,CA,35.310665,-119.035408,public,CHADEMO|J1772|J1772COMBO,4,200,87,high,6,10
+CF-ST-39872,39872,Buena Park Nissan,Non-Networked,Buena Park,CA,33.865269,-117.99485,public,CHADEMO|J1772|J1772COMBO,4,44,87,high,4,6
+CF-ST-39873,39873,Carson Nissan,Non-Networked,Carson,CA,33.824843,-118.245632,public,CHADEMO|J1772|J1772COMBO,4,44,77,high,7,11
+CF-ST-39876,39876,Chico Nissan,IN_CHARGE,Chico,CA,39.756973,-121.843684,public,CHADEMO|J1772COMBO,1,7,52,medium,5,8
+CF-ST-39877,39877,Puente Hills Nissan,Non-Networked,City of Industry,CA,33.998192,-117.928146,public,CHADEMO|J1772|J1772COMBO,3,450,76,high,7,15
+CF-ST-39881,39881,Larry H Miller Nissan,Non-Networked,Corona,CA,33.882561,-117.615799,public,CHADEMO|J1772,3,450,88,high,6,5
+CF-ST-39882,39882,Orange Coast Nissan,Non-Networked,Costa Mesa,CA,33.67503,-117.918549,public,CHADEMO|J1772|J1772COMBO,3,57,42,low,3,14
+CF-ST-39883,39883,Hanlees Nissan,Non-Networked,Davis,CA,38.552643,-121.691847,public,CHADEMO|J1772,2,14,51,medium,2,13
+CF-ST-39884,39884,Downey Nissan,Non-Networked,Downey,CA,33.947675,-118.151526,public,J1772|J1772COMBO,6,114,62,medium,6,14
+CF-ST-39885,39885,Nissan of Duarte,Non-Networked,Duarte,CA,34.136548,-117.975945,public,J1772,1,150,73,medium,2,9
+CF-ST-39886,39886,Mossy Nissan - El Cajon,Non-Networked,El Cajon,CA,32.796398,-116.975765,public,J1772,3,450,92,high,4,9
+CF-ST-39887,39887,Ross Nissan El Monte,Non-Networked,El Monte,CA,34.069202,-118.025177,public,CHADEMO|J1772|J1772COMBO,2,100,37,low,1,12
+CF-ST-39890,39890,McCrea Nissan,Non-Networked,Eureka,CA,40.800605,-124.164421,public,J1772,1,150,94,high,4,8
+CF-ST-39896,39896,Gardena Nissan,Non-Networked,Gardena,CA,33.888744,-118.307109,public,J1772,1,7,62,medium,6,12
+CF-ST-39901,39901,Hayward Nissan,Non-Networked,Hayward,CA,37.662472,-122.075279,private,CHADEMO|J1772|J1772COMBO,2,14,55,medium,5,12
+CF-ST-39907,39907,Universal City Nissan,Non-Networked,Los Angeles,CA,34.133446,-118.356601,public,CHADEMO|J1772,3,150,54,medium,6,11
+CF-ST-39908,39908,Razzari Nissan,Non-Networked,Merced,CA,37.305843,-120.502296,public,J1772,1,19,79,high,9,5
+CF-ST-39910,39910,Nissan of Mission Hills,Non-Networked,Mission Hills,CA,34.269809,-118.466606,public,J1772,1,50,47,low,7,13
+CF-ST-39912,39912,Metro Nissan of Montclair,Non-Networked,Montclair,CA,34.082222,-117.694903,public,CHADEMO|J1772|J1772COMBO,2,22,82,high,5,10
+CF-ST-39913,39913,Metro Nissan - Redlands,Non-Networked,Redlands,CA,34.065513,-117.21228,public,CHADEMO|J1772|J1772COMBO,4,28,70,medium,5,10
+CF-ST-39920,39920,North Bay Nissan,Non-Networked,Petaluma,CA,38.267258,-122.664894,public,CHADEMO|J1772|J1772COMBO,5,250,48,low,6,14
+CF-ST-39922,39922,Crown Nissan,Non-Networked,Redding,CA,40.571798,-122.366772,public,J1772,1,50,63,medium,4,11
+CF-ST-39925,39925,Hanlees Hilltop Nissan,Non-Networked,Richmond,CA,37.98521,-122.32138,public,CHADEMO|J1772|J1772COMBO,2,22,65,medium,2,8
+CF-ST-39926,39926,Raceway Nissan,Non-Networked,Riverside,CA,33.941878,-117.297603,public,J1772,1,150,67,medium,6,4
+CF-ST-39928,39928,Future Nissan of Roseville,Non-Networked,Roseville,CA,38.752209,-121.256452,public,CHADEMO|J1772|J1772COMBO,2,22,87,high,5,7
+CF-ST-39935,39935,Premier Nissan,Non-Networked,San Jose,CA,37.275144,-121.877656,public,CHADEMO|J1772|J1772COMBO,3,33,86,high,3,5
+CF-ST-39938,39938,Coast Nissan,Non-Networked,San Luis Obispo,CA,35.25062,-120.68455,public,CHADEMO|J1772,5,55,37,low,8,16
+CF-ST-39939,39939,Stevens Creek Nissan,Non-Networked,Santa Clara,CA,37.323489,-121.987882,public,CHADEMO|J1772|J1772COMBO,3,21,89,high,8,11
+CF-ST-39945,39945,Nissan of Van Nuys,Non-Networked,Sherman Oaks,CA,34.16924,-118.44896,public,CHADEMO|J1772|J1772COMBO,2,300,91,high,4,10
+CF-ST-39947,39947,First Nissan,Non-Networked,Simi Valley,CA,34.27747,-118.779648,public,CHADEMO|J1772|J1772COMBO,2,100,66,medium,4,6
+CF-ST-39949,39949,Temecula Nissan,IN_CHARGE,Temecula,CA,33.516652,-117.155286,private,CHADEMO|J1772COMBO,1,7,76,high,2,9
+CF-ST-39951,39951,Tracy Nissan,Non-Networked,Tracy,CA,37.759492,-121.463106,public,J1772,1,11,49,low,9,10
+CF-ST-39952,39952,Nissan of Tustin,Non-Networked,Tustin,CA,33.724659,-117.799248,public,CHADEMO|J1772|J1772COMBO,2,300,38,low,4,5
+CF-ST-39957,39957,Nissan of Visalia,Non-Networked,Visalia,CA,36.322916,-119.276228,public,CHADEMO|J1772|J1772COMBO,2,22,64,medium,8,14
+CF-ST-40185,40185,International Brotherhood of Electrical Workers 569 - NECA Electrical Training Center,Non-Networked,San Diego,CA,32.823912,-117.12114,private,J1772,2,300,68,medium,6,11
+CF-ST-40372,40372,PIE AE OTC 3FL PKGSTA3,ChargePoint Network,Austin,TX,30.256917,-97.749169,public,J1772,2,300,74,medium,7,12
+CF-ST-41265,41265,PIE AE ANIMAL SERVICE2,ChargePoint Network,Austin,TX,30.251357,-97.689015,public,J1772,2,22,63,medium,8,11
+CF-ST-41266,41266,PIE AE PUBDITTMAR2,ChargePoint Network,Austin,TX,30.18534,-97.801184,public,J1772,2,22,51,medium,5,12
+CF-ST-41269,41269,PIE AE MILWOOD LIB 2,ChargePoint Network,Austin,TX,30.422284,-97.71646,public,J1772,2,22,66,medium,5,11
+CF-ST-41272,41272,PIE AE PUB-STDAVIDSST1,ChargePoint Network,Austin,TX,30.268887,-97.738936,public,J1772,2,38,39,low,4,8
+CF-ST-41352,41352,Advanced Micro Devices Inc,Non-Networked,Santa Clara,CA,37.38237,-121.970806,private,J1772,14,266,56,medium,9,17
+CF-ST-41526,41526,Marsh Street Parking Structure,Non-Networked,San Luis Obispo,CA,35.279705,-120.6609,public,J1772,2,22,43,low,4,10
+CF-ST-41941,41941,Mission Trail Baptist Hospital,Non-Networked,San Antonio,TX,29.343808,-98.436931,public,J1772,6,66,79,high,4,9
+CF-ST-42209,42209,Park 'N Fly,Non-Networked,Houston,TX,29.94917,-95.33138,public,J1772,1,50,61,medium,6,11
+CF-ST-43281,43281,ACC-1 RRC 4,ChargePoint Network,Round Rock,TX,30.563925,-97.658312,public,J1772,2,100,64,medium,1,7
+CF-ST-43478,43478,Malibu Country Mart,Non-Networked,Malibu,CA,34.035802,-118.686393,public,J1772,2,100,88,high,7,13
+CF-ST-44017,44017,Delta Electronics,Non-Networked,Fremont,CA,37.488952,-121.948969,private,CHADEMO|J1772|J1772COMBO,20,140,95,high,7,29
+CF-ST-45313,45313,CITY OF DUBLIN LIBRARY MIDDLE,ChargePoint Network,Dublin,CA,37.702909,-121.91835,public,J1772,1,19,35,low,5,9
+CF-ST-46136,46136,Amador Transit,Non-Networked,Sutter Creek,CA,38.379983,-120.807672,public,J1772,1,50,89,high,9,11
+CF-ST-46473,46473,Golden Gate Park - Music Concourse Garage,Non-Networked,San Francisco,CA,37.768766,-122.468341,public,J1772|NEMA520,13,1950,86,high,4,22
+CF-ST-46482,46482,Cupertino Electric,Non-Networked,San Jose,CA,37.36218,-121.899539,public,J1772,12,228,49,low,7,21
+CF-ST-46519,46519,J.D. Power & Associates,Non-Networked,Westlake Village,CA,34.148413,-118.798832,private,J1772,4,200,36,low,6,16
+CF-ST-46709,46709,Nissan of Burlingame,Non-Networked,Burlingame,CA,37.577801,-122.342262,public,J1772,1,50,78,high,3,10
+CF-ST-46721,46721,Dublin Nissan,Non-Networked,Dublin,CA,37.70271,-121.91118,public,CHADEMO|J1772,5,55,93,high,9,7
+CF-ST-46722,46722,Dublin Nissan,Non-Networked,Dublin,CA,37.70271,-121.91118,private,J1772,1,50,93,high,1,4
+CF-ST-46723,46723,Stone Brewing World Bistro & Gardens,Non-Networked,Escondido,CA,33.11587,-117.11955,public,J1772,2,100,76,high,3,11
+CF-ST-46724,46724,Momentum Nissan,Non-Networked,Fairfield,CA,38.24415,-122.0795,public,CHADEMO|J1772|J1772COMBO,3,21,46,low,5,11
+CF-ST-46725,46725,Momentum Nissan,Non-Networked,Fairfield,CA,38.24415,-122.0795,private,J1772,1,11,55,medium,8,8
+CF-ST-46729,46729,Renaissance Indian Wells Resort & Spa,Non-Networked,Indian Wells,CA,33.72323,-116.324409,public,J1772,2,100,56,medium,5,10
+CF-ST-46731,46731,OMP Sanders Rubbercraft,Non-Networked,Long Beach,CA,33.823452,-118.148872,private,J1772,1,7,51,medium,8,3
+CF-ST-46733,46733,LA County Museum of Art,POWERFLEX,Los Angeles,CA,34.063383,-118.35808,public,J1772,15,2250,82,high,1,22
+CF-ST-46744,46744,Empire Nissan,Non-Networked,Ontario,CA,34.04929,-117.54723,private,J1772,1,7,49,low,1,3
+CF-ST-46974,46974,City of Rancho Cucamonga - Animal Care & Adoption Center,Non-Networked,Rancho Cucamonga,CA,34.100456,-117.54918,public,J1772,1,11,95,high,4,3
+CF-ST-47457,47457,Toyota/Subaru of Santa Cruz,Non-Networked,Capitola,CA,36.981884,-121.962228,private,J1772,6,66,74,medium,4,10
+CF-ST-47511,47511,City of Dallas,Non-Networked,Dallas,TX,32.653718,-96.628439,private,J1772,1,7,65,medium,4,10
+CF-ST-47527,47527,Nissan - Greenville,Non-Networked,Greenville,TX,33.104816,-96.101919,public,J1772,1,19,79,high,6,5
+CF-ST-47533,47533,Bert Ogden Nissan,Non-Networked,McAllen,TX,26.206795,-98.203062,public,CHADEMO|J1772|J1772COMBO,2,300,73,medium,2,6
+CF-ST-47593,47593,Carson Nissan,Non-Networked,Carson,CA,33.824843,-118.245632,private,J1772,1,7,54,medium,1,7
+CF-ST-47594,47594,Palm Springs Nissan,Non-Networked,Cathedral City,CA,33.784718,-116.470703,private,J1772,1,50,71,medium,7,6
+CF-ST-47595,47595,Cerritos Nissan,Non-Networked,Cerritos,CA,33.861246,-118.100594,private,J1772,1,150,39,low,4,4
+CF-ST-47596,47596,Chico Nissan,Non-Networked,Chico,CA,39.756973,-121.843684,private,J1772,1,19,79,high,2,12
+CF-ST-47598,47598,Lithia Nissan - Clovis,Non-Networked,Clovis,CA,36.83686,-119.7173,private,J1772,1,7,85,high,6,11
+CF-ST-47599,47599,Nissan - Serramonte,IN_CHARGE,Colma,CA,37.675406,-122.461036,private,CHADEMO|J1772COMBO,1,19,62,medium,2,11
+CF-ST-47600,47600,Autocom Nissan - Concord,Non-Networked,Concord,CA,37.979485,-122.050262,private,J1772,1,19,76,high,1,9
+CF-ST-47607,47607,Mossy Nissan - El Cajon,Non-Networked,El Cajon,CA,32.796398,-116.975765,private,CHADEMO|J1772|J1772COMBO,2,100,87,high,2,10
+CF-ST-47609,47609,Mossy Nissan - Escondido,Non-Networked,Escondido,CA,33.116529,-117.106987,private,J1772,1,50,58,medium,3,9
+CF-ST-47867,47867,Keating Nissan,Non-Networked,Conroe,TX,30.303243,-95.466743,private,J1772,1,150,46,low,5,12
+CF-ST-48064,48064,Nissan of Vacaville,Non-Networked,Vacaville,CA,38.381291,-121.94132,private,J1772,1,150,86,high,8,10
+CF-ST-48066,48066,Vallejo Nissan,Non-Networked,Vallejo,CA,38.118051,-122.255474,private,J1772,1,150,62,medium,5,8
+CF-ST-48067,48067,Nissan of Van Nuys,Non-Networked,Sherman Oaks,CA,34.16924,-118.44896,private,J1772,1,11,89,high,2,7
+CF-ST-48068,48068,Valley Hi Nissan,Non-Networked,Victorville,CA,34.517652,-117.321678,private,J1772,1,50,91,high,4,10
+CF-ST-48071,48071,West Covina Nissan,Non-Networked,West Covina,CA,34.074482,-117.891502,private,J1772,1,150,71,medium,7,8
+CF-ST-48120,48120,Universal City Nissan,Non-Networked,Los Angeles,CA,34.133446,-118.356601,private,J1772,1,50,36,low,6,5

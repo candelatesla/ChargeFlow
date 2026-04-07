@@ -61,3 +61,8 @@ synthetic:
   queue_event_probability: 0.42
   failure_event_probability: 0.14
   preventive_ticket_probability: 0.08
+
+ml:
+  random_seed: 42
+  demand_holdout_days: 7
+  failure_holdout_days: 10

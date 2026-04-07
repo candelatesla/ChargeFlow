@@ -134,6 +134,63 @@ Day 3 outputs are written to `data/processed/warehouse/`:
 
 See `docs/day3_warehouse.md` for the warehouse-layer overview.
 
+## Run Day 4 Analytics and ML
+
+Train the baseline forecasting and failure-risk models:
+
+```bash
+python3 -m src.ml.cli run-all
+```
+
+Day 4 outputs are written to `data/processed/ml/`:
+
+- `exploratory_summary.json`
+- `model_features.md`
+- `demand_forecast_model.joblib`
+- `demand_forecast_metrics.json`
+- `demand_forecast_predictions.csv`
+- `failure_risk_model.joblib`
+- `failure_risk_metrics.json`
+- `failure_risk_predictions.csv`
+
+See `docs/day4_ml.md` for the model overview.
+
+## Run Day 5 Recommendation and RAG
+
+Build the retrieval index:
+
+```bash
+python3 -m src.rag.cli build-index
+```
+
+Start the API:
+
+```bash
+uvicorn api.main:app --reload
+```
+
+Day 5 generated outputs:
+
+- `data/processed/recommender/station_recommendations_snapshot.csv`
+- `data/processed/rag/rag_documents.csv`
+- `data/processed/rag/rag_index.joblib`
+- `data/processed/rag/rag_index_metadata.json`
+
+See `docs/day5_services.md` for the service overview.
+
+## Hosted Demo Strategy
+
+ChargeFlow uses a split delivery model:
+
+- Hosted portfolio demo on Vercel:
+  - static frontend from `public/index.html`
+  - FastAPI backend from `api/index.py`
+  - checked-in demo assets under `demo_assets/`
+- Local companion app:
+  - Streamlit remains the local interactive app path
+
+Deployment notes are in `docs/vercel_deploy.md`.
+
 ## AI-Assisted Development Note
 
 This project was AI-assisted. I defined the problem, architecture, constraints, and review standards, and used AI tools to accelerate implementation while remaining responsible for validation, debugging, and final quality.

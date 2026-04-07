@@ -1,0 +1,41 @@
+ticket_id,station_id,failure_event_id,ticket_type,priority,status,opened_at_utc,closed_at_utc,technician_name,resolution_code,summary
+TIC-00001,CF-ST-1573,FLR-00001,corrective,low,closed,2026-03-14T20:09:19.259627+00:00,2026-03-15T01:31:19.259627+00:00,J. Nguyen,update_firmware,Resolved cooling_alarm on port 1.
+TIC-00002,CF-ST-6425,FLR-00002,corrective,medium,closed,2026-02-19T00:36:19.259627+00:00,2026-02-19T07:34:19.259627+00:00,R. Kim,reboot_controller,Resolved breaker_trip on port 2.
+TIC-00003,CF-ST-6506,FLR-00003,corrective,low,closed,2026-03-03T02:34:19.259627+00:00,2026-03-03T06:18:19.259627+00:00,A. Patel,reboot_controller,Resolved payment_reader_error on port 2.
+TIC-00004,CF-ST-7196,FLR-00004,corrective,low,closed,2026-03-15T08:08:19.259627+00:00,2026-03-15T14:53:19.259627+00:00,A. Patel,replace_cable,Resolved network_dropout on port 2.
+TIC-00005,CF-ST-21397,FLR-00005,corrective,low,closed,2026-03-11T04:08:19.259627+00:00,2026-03-11T08:58:19.259627+00:00,S. Johnson,reboot_controller,Resolved payment_reader_error on port 3.
+TIC-00006,CF-ST-25507,FLR-00006,corrective,medium,closed,2026-02-15T05:17:19.259627+00:00,2026-02-15T08:12:19.259627+00:00,S. Johnson,replace_cable,Resolved breaker_trip on port 2.
+TIC-00007,CF-ST-25515,FLR-00007,corrective,medium,closed,2026-03-22T16:27:19.259627+00:00,2026-03-23T02:15:19.259627+00:00,M. Garcia,reset_payment_terminal,Resolved network_dropout on port 1.
+TIC-00008,CF-ST-25516,FLR-00008,corrective,low,closed,2026-03-14T18:21:19.259627+00:00,2026-03-14T21:16:19.259627+00:00,M. Garcia,reset_payment_terminal,Resolved network_dropout on port 2.
+TIC-00009,CF-ST-25525,FLR-00009,corrective,low,closed,2026-02-27T15:07:19.259627+00:00,2026-02-27T20:45:19.259627+00:00,R. Kim,reboot_controller,Resolved network_dropout on port 1.
+TIC-00010,CF-ST-27329,FLR-00010,corrective,medium,closed,2026-02-19T09:29:19.259627+00:00,2026-02-19T15:24:19.259627+00:00,R. Kim,tighten_terminal,Resolved cooling_alarm on port 1.
+TIC-00011,CF-ST-33183,FLR-00011,corrective,medium,closed,2026-03-21T05:13:19.259627+00:00,2026-03-21T08:41:19.259627+00:00,M. Garcia,tighten_terminal,Resolved breaker_trip on port 16.
+TIC-00012,CF-ST-39314,FLR-00012,corrective,high,closed,2026-03-01T08:37:19.259627+00:00,2026-03-01T13:58:19.259627+00:00,R. Kim,reset_payment_terminal,Resolved cooling_alarm on port 1.
+TIC-00013,CF-ST-39714,FLR-00013,corrective,high,closed,2026-03-12T22:45:19.259627+00:00,2026-03-13T01:31:19.259627+00:00,R. Kim,replace_cable,Resolved connector_fault on port 3.
+TIC-00014,CF-ST-39720,FLR-00014,corrective,high,closed,2026-03-16T17:42:19.259627+00:00,2026-03-17T02:04:19.259627+00:00,M. Garcia,update_firmware,Resolved cooling_alarm on port 2.
+TIC-00015,CF-ST-39728,FLR-00015,corrective,high,closed,2026-03-02T23:45:19.259627+00:00,2026-03-03T03:52:19.259627+00:00,R. Kim,tighten_terminal,Resolved cooling_alarm on port 1.
+TIC-00016,CF-ST-39872,FLR-00016,corrective,medium,closed,2026-03-20T22:39:19.259627+00:00,2026-03-21T07:38:19.259627+00:00,M. Garcia,tighten_terminal,Resolved breaker_trip on port 2.
+TIC-00017,CF-ST-39886,FLR-00017,corrective,high,closed,2026-03-13T23:19:19.259627+00:00,2026-03-14T03:22:19.259627+00:00,A. Patel,update_firmware,Resolved breaker_trip on port 3.
+TIC-00018,CF-ST-39890,FLR-00018,corrective,medium,closed,2026-03-07T12:15:19.259627+00:00,2026-03-07T15:51:19.259627+00:00,J. Nguyen,update_firmware,Resolved network_dropout on port 1.
+TIC-00019,CF-ST-39896,FLR-00019,corrective,low,closed,2026-02-19T09:52:19.259627+00:00,2026-02-19T13:35:19.259627+00:00,M. Garcia,reboot_controller,Resolved network_dropout on port 1.
+TIC-00020,CF-ST-39912,FLR-00020,corrective,high,closed,2026-03-13T17:24:19.259627+00:00,2026-03-14T01:28:19.259627+00:00,A. Patel,update_firmware,Resolved network_dropout on port 2.
+TIC-00021,CF-ST-39935,FLR-00021,corrective,medium,closed,2026-03-23T15:25:19.259627+00:00,2026-03-23T19:20:19.259627+00:00,R. Kim,reboot_controller,Resolved breaker_trip on port 2.
+TIC-00022,CF-ST-39949,FLR-00022,corrective,high,closed,2026-02-14T17:18:19.259627+00:00,2026-02-14T22:44:19.259627+00:00,S. Johnson,reboot_controller,Resolved cooling_alarm on port 1.
+TIC-00023,CF-ST-46473,FLR-00023,corrective,low,closed,2026-03-21T01:04:19.259627+00:00,2026-03-21T10:02:19.259627+00:00,A. Patel,replace_cable,Resolved breaker_trip on port 6.
+TIC-00024,CF-ST-46744,FLR-00024,corrective,medium,closed,2026-03-08T16:42:19.259627+00:00,2026-03-08T22:26:19.259627+00:00,J. Nguyen,reboot_controller,Resolved connector_fault on port 1.
+TIC-00025,CF-ST-46974,FLR-00025,corrective,low,closed,2026-02-19T07:05:19.259627+00:00,2026-02-19T15:45:19.259627+00:00,S. Johnson,update_firmware,Resolved cooling_alarm on port 1.
+TIC-00026,CF-ST-47594,FLR-00026,corrective,high,closed,2026-03-15T06:02:19.259627+00:00,2026-03-15T11:29:19.259627+00:00,R. Kim,reboot_controller,Resolved payment_reader_error on port 1.
+TIC-00027,CF-ST-1531,,preventive,low,closed,2026-03-10T15:22:19.380564+00:00,2026-03-10T15:57:19.380564+00:00,R. Kim,update_firmware,Preventive maintenance inspection completed during low-traffic window.
+TIC-00028,CF-ST-7196,,preventive,low,closed,2026-02-14T15:22:19.380570+00:00,2026-02-14T15:58:19.380570+00:00,R. Kim,update_firmware,Preventive maintenance inspection completed during low-traffic window.
+TIC-00029,CF-ST-21450,,preventive,low,closed,2026-02-22T15:22:19.380575+00:00,2026-02-22T17:23:19.380575+00:00,R. Kim,reboot_controller,Preventive maintenance inspection completed during low-traffic window.
+TIC-00030,CF-ST-21565,,preventive,low,closed,2026-03-05T15:22:19.380578+00:00,2026-03-05T16:53:19.380578+00:00,M. Garcia,reboot_controller,Preventive maintenance inspection completed during low-traffic window.
+TIC-00031,CF-ST-25491,,preventive,low,closed,2026-03-05T15:22:19.380582+00:00,2026-03-05T16:32:19.380582+00:00,M. Garcia,update_firmware,Preventive maintenance inspection completed during low-traffic window.
+TIC-00032,CF-ST-25516,,preventive,low,closed,2026-03-10T15:22:19.380586+00:00,2026-03-10T17:18:19.380586+00:00,S. Johnson,reset_payment_terminal,Preventive maintenance inspection completed during low-traffic window.
+TIC-00033,CF-ST-33183,,preventive,low,closed,2026-02-14T15:22:19.380590+00:00,2026-02-14T16:55:19.380590+00:00,S. Johnson,update_firmware,Preventive maintenance inspection completed during low-traffic window.
+TIC-00034,CF-ST-39726,,preventive,low,closed,2026-02-25T15:22:19.380594+00:00,2026-02-25T16:58:19.380594+00:00,S. Johnson,replace_cable,Preventive maintenance inspection completed during low-traffic window.
+TIC-00035,CF-ST-39901,,preventive,low,closed,2026-02-27T15:22:19.380599+00:00,2026-02-27T17:00:19.380599+00:00,R. Kim,reset_payment_terminal,Preventive maintenance inspection completed during low-traffic window.
+TIC-00036,CF-ST-39922,,preventive,low,closed,2026-03-19T15:22:19.380604+00:00,2026-03-19T16:24:19.380604+00:00,S. Johnson,reboot_controller,Preventive maintenance inspection completed during low-traffic window.
+TIC-00037,CF-ST-39947,,preventive,low,closed,2026-03-17T15:22:19.380607+00:00,2026-03-17T16:46:19.380607+00:00,J. Nguyen,reboot_controller,Preventive maintenance inspection completed during low-traffic window.
+TIC-00038,CF-ST-43281,,preventive,low,closed,2026-02-16T15:22:19.380611+00:00,2026-02-16T16:33:19.380611+00:00,R. Kim,tighten_terminal,Preventive maintenance inspection completed during low-traffic window.
+TIC-00039,CF-ST-44017,,preventive,low,closed,2026-03-28T15:22:19.380615+00:00,2026-03-28T17:15:19.380615+00:00,M. Garcia,reset_payment_terminal,Preventive maintenance inspection completed during low-traffic window.
+TIC-00040,CF-ST-46709,,preventive,low,closed,2026-03-26T15:22:19.380618+00:00,2026-03-26T17:10:19.380618+00:00,M. Garcia,replace_cable,Preventive maintenance inspection completed during low-traffic window.

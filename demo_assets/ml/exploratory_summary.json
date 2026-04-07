@@ -1,0 +1,24 @@
+{
+  "row_counts": {
+    "demand_rows": 90,
+    "failure_rows": 4726,
+    "states": 2,
+    "stations": 200
+  },
+  "date_range": {
+    "demand_min_date": "2026-02-14",
+    "demand_max_date": "2026-03-30",
+    "failure_min_date": "2026-02-14",
+    "failure_max_date": "2026-03-31"
+  },
+  "demand_summary": {
+    "avg_daily_sessions": 77.14,
+    "avg_daily_energy_kwh": 3970.68,
+    "avg_grid_demand_mw": 37386.94
+  },
+  "failure_summary": {
+    "positive_failure_days": 24,
+    "failure_rate_pct": 0.51,
+    "avg_queue_minutes": 7.58
+  }
+}

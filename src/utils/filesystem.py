@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import csv
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -18,13 +19,34 @@ def raw_data_root() -> Path:
 
 
 def processed_data_root() -> Path:
-    path = ROOT_DIR / "data" / "processed"
+    if os.getenv("VERCEL") == "1":
+        path = Path("/tmp/chargeflow/data/processed")
+    else:
+        path = ROOT_DIR / "data" / "processed"
     path.mkdir(parents=True, exist_ok=True)
     return path
 
 
 def warehouse_data_root() -> Path:
     path = processed_data_root() / "warehouse"
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def ml_data_root() -> Path:
+    path = processed_data_root() / "ml"
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def rag_data_root() -> Path:
+    path = processed_data_root() / "rag"
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def recommender_data_root() -> Path:
+    path = processed_data_root() / "recommender"
     path.mkdir(parents=True, exist_ok=True)
     return path
 
