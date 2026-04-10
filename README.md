@@ -1,204 +1,177 @@
 # ChargeFlow
 
-ChargeFlow is an AI-assisted, end-to-end EV charging reliability and analytics platform built with Python and SQL. It combines real public charging-station data, weather and energy context, and realistic synthetic telemetry to support data engineering, analytics, machine learning, and applied AI use cases.
+ChargeFlow is an AI-assisted EV charging reliability, demand forecasting, recommendation, and RAG operations platform built with Python and SQL. It combines real public EV infrastructure data, weather and grid context, synthetic operational data, warehouse modeling, ML baselines, recommendation scoring, retrieval over maintenance knowledge, a hosted API demo, and a local Streamlit companion app.
 
-## Business Problem
+## Why This Project Exists
 
-EV charging networks suffer from fragmented infrastructure data, uneven utilization, equipment downtime, and limited operational visibility. ChargeFlow consolidates public charging-station data with weather and electricity context, then extends it with synthetic operating data to support forecasting, failure-risk modeling, recommendations, and operations workflows.
+EV charging operators deal with fragmented infrastructure data, uneven utilization, downtime, queue pressure, and poor operational visibility. ChargeFlow was built to demonstrate end-to-end ownership across the workflow:
 
-## Day 1 Scope
+- ingest real public data
+- generate realistic operational behavior where public data is missing
+- model the data into clean warehouse layers
+- train baseline forecasting and failure-risk models
+- expose recommendation and retrieval services
+- present the results through a hosted demo, local app, and Power BI-ready outputs
 
-Day 1 establishes the project foundation:
+## What ChargeFlow Does
 
-- repository structure
-- centralized configuration
-- environment setup
-- public API ingestion clients
-- local raw data landing zone
-- runnable command-line ingestion flow
+- Ingests EV station metadata, weather context, and electricity context
+- Generates synthetic sessions, telemetry, queues, failures, maintenance tickets, and notes
+- Builds raw, processed, warehouse, and gold analytical layers
+- Forecasts charging demand and predicts station failure risk
+- Recommends stations using reliability, queue, and ML signals
+- Retrieves grounded answers from maintenance notes, tickets, and SOPs
+- Serves a hosted Vercel demo and a local Streamlit operations console
 
-## Current Architecture
-
-- `src/ingestion/`: public data clients and command-line ingestion entry points
-- `src/utils/`: configuration, logging, filesystem, and HTTP helpers
-- `configs/`: project and source configuration
-- `data/raw/`: raw landed API payloads
-- `docs/`: architecture and project notes
-
-## Day 1 Ingestion Flow
+## Architecture
 
 ```mermaid
 flowchart LR
-    A["NREL EV Station API"] --> E["Stations Ingestion Client"]
-    B["Open-Meteo Weather API"] --> F["Weather Ingestion Client"]
-    C["EIA Energy API"] --> G["Energy Ingestion Client"]
-    D[".env + configs/base.yaml"] --> H["Config Loader"]
-    H --> E
-    H --> F
-    H --> G
-    E --> I["Ingestion Pipeline / CLI"]
-    F --> I
-    G --> I
-    I --> J["Raw JSON Landing Zone"]
-    J --> K["data/raw/stations"]
-    J --> L["data/raw/weather"]
-    J --> M["data/raw/energy"]
+    A["Public APIs<br/>NREL / Open-Meteo / EIA"] --> B["Ingestion Layer"]
+    B --> C["Raw JSON Layer"]
+    C --> D["Synthetic Generation"]
+    D --> E["Processed Operational CSVs"]
+    C --> F["Warehouse Loader"]
+    E --> F
+    F --> G["SQLite Warehouse<br/>stage / dim / fact / gold"]
+    G --> H["ML Baselines"]
+    H --> I["Predictions / Metrics / Artifacts"]
+    G --> J["Recommendation Service"]
+    E --> K["RAG Index"]
+    I --> J
+    K --> L["FastAPI API"]
+    G --> M["Streamlit Companion App"]
+    L --> N["Hosted Demo on Vercel"]
+    G --> O["Power BI Export Bundle"]
 ```
 
-This flow shows how ChargeFlow pulls real public data through source-specific ingestion clients, applies centralized configuration, and stores timestamped raw JSON files for downstream transformation and analytics.
-
-## Data Sources
-
-- NREL Alternative Fuel Stations API for EV charging-station metadata
-- Open-Meteo API for free weather context
-- U.S. EIA API for electricity grid context
+More detail: `docs/architecture.md`
 
 ## Stack
 
-Python, SQL, PostgreSQL, Parquet, FastAPI, Streamlit, Power BI, scikit-learn, XGBoost or LightGBM, Chroma or pgvector, optional Groq API
+- Python
+- SQL
+- SQLite for the local analytical warehouse
+- FastAPI for services
+- Streamlit for the local companion app
+- scikit-learn for ML baselines
+- TF-IDF retrieval over maintenance and SOP content
+- Vercel for the hosted portfolio demo
+- Power BI-ready CSV exports
+
+## Repository Layout
+
+```text
+chargeflow/
+  app/              # local Streamlit companion app
+  api/              # FastAPI service entrypoints
+  configs/          # YAML configuration
+  data/             # raw, processed, gold outputs
+  demo_assets/      # checked-in hosted-demo assets
+  docs/             # architecture, runbooks, deployment guides
+  scripts/          # utility and export scripts
+  sql/              # warehouse DDL and transformation SQL
+  src/              # ingestion, synthetic, warehouse, ml, recommender, rag
+  tests/            # verification
+  README.md
+```
 
 ## Setup
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[dev]"
+pip install -r requirements.txt
 cp .env.example .env
 ```
 
-## Run Day 1 Ingestion
+Optional environment variables:
 
-Pull all configured sources:
+- `NREL_API_KEY`
+- `EIA_API_KEY`
+- `GROQ_API_KEY`
 
-```bash
-chargeflow-ingest pull-all
-```
+## Local End-to-End Run
 
-Pull a single source:
-
-```bash
-chargeflow-ingest stations
-chargeflow-ingest weather
-chargeflow-ingest energy
-```
-
-If you prefer to avoid package installation for the CLI entry point, you can also run:
+Day-by-day runnable path:
 
 ```bash
 python3 -m src.ingestion.cli pull-all
-```
-
-If you added real API keys in `.env`, the ingestion commands will automatically use those values for NREL and EIA.
-
-Raw outputs are written into timestamped files under `data/raw/`.
-
-## Run Day 2 Synthetic Generation
-
-Generate synthetic operational and user-behavior datasets anchored to the latest station ingestion:
-
-```bash
 python3 -m src.synthetic.cli generate-all
-```
-
-Synthetic outputs are written to `data/processed/synthetic/`:
-
-- `augmented_stations.csv`
-- `users.csv`
-- `vehicles.csv`
-- `charging_sessions.csv`
-- `telemetry_events.csv`
-- `queue_events.csv`
-- `failure_events.csv`
-- `maintenance_tickets.csv`
-- `maintenance_notes.csv`
-- `generation_manifest.csv`
-
-See `docs/day2_synthetic_generation.md` for dataset design and join keys.
-
-## Run Day 3 Warehouse Build
-
-Build the local SQL warehouse, cleaned tables, quality checks, and gold marts:
-
-```bash
 python3 -m src.warehouse.cli build-all
-```
-
-Day 3 outputs are written to `data/processed/warehouse/`:
-
-- `chargeflow.db`
-- `dq_results.csv`
-- `gold_station_daily_metrics.csv`
-- `gold_state_daily_demand.csv`
-- `gold_station_health.csv`
-- `gold_ml_station_day_features.csv`
-
-See `docs/day3_warehouse.md` for the warehouse-layer overview.
-
-## Run Day 4 Analytics and ML
-
-Train the baseline forecasting and failure-risk models:
-
-```bash
 python3 -m src.ml.cli run-all
-```
-
-Day 4 outputs are written to `data/processed/ml/`:
-
-- `exploratory_summary.json`
-- `model_features.md`
-- `demand_forecast_model.joblib`
-- `demand_forecast_metrics.json`
-- `demand_forecast_predictions.csv`
-- `failure_risk_model.joblib`
-- `failure_risk_metrics.json`
-- `failure_risk_predictions.csv`
-
-See `docs/day4_ml.md` for the model overview.
-
-## Run Day 5 Recommendation and RAG
-
-Build the retrieval index:
-
-```bash
 python3 -m src.rag.cli build-index
+python3 scripts/export_powerbi.py
 ```
 
-Start the API:
+## Local App and API
+
+Run the local API:
 
 ```bash
-uvicorn api.main:app --reload
+python3 -m uvicorn api.main:app --reload
 ```
 
-Day 5 generated outputs:
+Run the local Streamlit companion app:
 
-- `data/processed/recommender/station_recommendations_snapshot.csv`
-- `data/processed/rag/rag_documents.csv`
-- `data/processed/rag/rag_index.joblib`
-- `data/processed/rag/rag_index_metadata.json`
+```bash
+python3 -m streamlit run app/streamlit_app.py
+```
 
-See `docs/day5_services.md` for the service overview.
-
-## Hosted Demo Strategy
+## Hosted Demo
 
 ChargeFlow uses a split delivery model:
 
 - Hosted portfolio demo on Vercel:
   - static frontend from `public/index.html`
   - FastAPI backend from `api/index.py`
-  - checked-in demo assets under `demo_assets/`
+  - checked-in hosted demo data under `demo_assets/`
 - Local companion app:
-  - Streamlit remains the local interactive app path
+  - Streamlit for fuller local exploration
 
-Deployment notes are in `docs/vercel_deploy.md`.
+Deployment guide: `docs/vercel_deploy.md`
+
+## Power BI Outputs
+
+Create the Power BI-ready export bundle:
+
+```bash
+python3 scripts/export_powerbi.py
+```
+
+Guide: `docs/power_bi.md`
+
+## Key Outputs
+
+- Raw source data: `data/raw/`
+- Synthetic operational data: `data/processed/synthetic/`
+- Warehouse and marts: `data/processed/warehouse/`
+- ML artifacts and predictions: `data/processed/ml/`
+- Recommendation and retrieval assets: `data/processed/recommender/`, `data/processed/rag/`
+- Power BI bundle: `data/gold/power_bi_exports/`
+
+## Documentation
+
+- Architecture: `docs/architecture.md`
+- Day 1 foundation: `docs/day1_foundation.md`
+- Day 2 synthetic generation: `docs/day2_synthetic_generation.md`
+- Day 3 warehouse: `docs/day3_warehouse.md`
+- Day 4 ML: `docs/day4_ml.md`
+- Day 5 services: `docs/day5_services.md`
+- Vercel deployment: `docs/vercel_deploy.md`
+- Power BI guide: `docs/power_bi.md`
+- Demo runbook: `docs/demo_runbook.md`
+
+## Demo Screenshots
+
+Screenshot placeholders for the final portfolio version:
+
+- Hosted Vercel landing page
+- Local Streamlit operations console
+- Recommendation results view
+- Grounded ops assistant view
+- Power BI dashboard view
 
 ## AI-Assisted Development Note
 
 This project was AI-assisted. I defined the problem, architecture, constraints, and review standards, and used AI tools to accelerate implementation while remaining responsible for validation, debugging, and final quality.
-
-## Roadmap
-
-- Day 2: synthetic charging sessions, telemetry, failure events, and maintenance logs
-- Day 3: warehouse modeling, SQL transformations, and data quality checks
-- Day 4: forecasting and failure-risk modeling
-- Day 5: recommendation and RAG services
-- Day 6: Streamlit app, Power BI outputs, and final polish
