@@ -175,3 +175,8 @@ Screenshot placeholders for the final portfolio version:
 ## AI-Assisted Development Note
 
 This project was AI-assisted. I defined the problem, architecture, constraints, and review standards, and used AI tools to accelerate implementation while remaining responsible for validation, debugging, and final quality.
+
+## License / Copyright
+© 2026 Yash Chetan Doshi. All rights reserved.
+
+You may not copy, modify, distribute, or use any part of this repository or its contents without prior written permission from the author.
